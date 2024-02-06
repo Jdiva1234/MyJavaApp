@@ -3,7 +3,25 @@ import java.util.Random;
 
 
 public class MyJavaApp {
+    public int doSomething(int n) {
+        if(n > 15) {
+            if(n > 30)
+                return 30;
+            else
+                return 22;
+        } else {
+            if(n < 5)
+                return 0;
+            else
+                return 10;
+        }
+    }
     public static void main( String[] args ) {
+
+        MyJavaApp myApp = new MyJavaApp();
+        System.out.println( myApp.doSomething(9));
+
+
         Scanner scan = new Scanner(System.in);
         Random random = new Random();
         int num1;
@@ -100,4 +118,6 @@ public class MyJavaApp {
         System.out.println(farewellMessage);
 
     }
+
+
 }
